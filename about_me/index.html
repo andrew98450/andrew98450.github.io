@@ -7,14 +7,14 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Andrew的個人知識交流與接案洽詢網站</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/fontawesome.min.css" rel="stylesheet">
-        <link href="/css/brands.min.css" rel="stylesheet">
-        <link href="/css/solid.min.css" rel="stylesheet">
-        <link href="/css/v4-font-face.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>關於我 - Andrew的個人知識交流與接案洽詢網站</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">Andrew的個人知識交流與接案洽詢網站</a>
+                <a class="navbar-brand" href="..">Andrew的個人知識交流與接案洽詢網站</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,25 +35,25 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="/." class="nav-link">Home</a>
+                                <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/about_me/" class="nav-link">關於我</a>
+                                <a href="./" class="nav-link active" aria-current="page">關於我</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">知識分享</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/paper/" class="dropdown-item">論文解說</a>
+    <a href="../paper/" class="dropdown-item">論文解說</a>
 </li>
                                     
 <li>
-    <a href="/math/" class="dropdown-item">數學計算</a>
+    <a href="../math/" class="dropdown-item">數學計算</a>
 </li>
                                     
 <li>
-    <a href="/ai_models/" class="dropdown-item">AI模型設計教學</a>
+    <a href="../ai_models/" class="dropdown-item">AI模型設計教學</a>
 </li>
                                 </ul>
                             </li>
@@ -62,16 +62,16 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="/case/" class="dropdown-item">接案項目</a>
+    <a href="../case/" class="dropdown-item">接案項目</a>
 </li>
                                     
 <li>
-    <a href="/side_projects/" class="dropdown-item">個人作品集</a>
+    <a href="../side_projects/" class="dropdown-item">個人作品集</a>
 </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="/donate/" class="nav-link">支持與鼓勵</a>
+                                <a href="../donate/" class="nav-link">支持與鼓勵</a>
                             </li>
                         </ul>
 
@@ -81,6 +81,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../paper/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -88,15 +98,49 @@
 
         <div class="container">
             <div class="row">
-
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
     </div>
 
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
+<h3 id="_1">關於我</h3>
+<ul>
+<li>本名：黃議慶</li>
+<li>個人學歷：<ul>
+<li>逢甲大學資訊工程所 碩士 2023/09~2025/06<ul>
+<li>碩士論文：基於潛在擴散模型之條件密碼猜測/Conditional Password Guessing Based on Latent Diffusion Model</li>
+<li>會議論文：ICKII 2025/Intelligent Password Guessing Using Feature-Guided Diffusion (Best Conference Paper Award)</li>
+</ul>
+</li>
+<li>明新科技大學資訊工程系 學士 2019/09~2023/06<ul>
+<li>畢業專題：以虛擬容器實作網路密罐系統/Implementation of Network Honeypot System In Virtual Container</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>個人經歷：<ul>
+<li>康寧顯示玻璃股份有限公司 校園實習生 2024/03~2025/03</li>
+<li>逢甲大學資訊處 約聘助理 2025/08~2025/10</li>
+<li>億集創見應用科技股份有限公司 AI工程師 2026/03~2026/06</li>
+</ul>
+</li>
+</ul>
+<h3 id="_2">支持與鼓勵</h3>
+<ul>
+<li><a href="../donate/">點擊支持與贊助</a></li>
+</ul></div>
             </div>
         </div>
 
@@ -104,13 +148,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = "/",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js"></script>
-        <script src="/search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
